@@ -1,0 +1,32 @@
+<!DOCTYPE html> {% load static%}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/index.css'%}">
+</head>
+
+<body>
+    <header>
+        <h2>Django Blog</h1>
+            <nav>
+                <ul class="nav-container">
+                    <li class="nav-item">
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/blogs">Blogs</a>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+    {%block content%}
+    {% endblock %}
+    <footer>
+        <p class="footer-class">Copyright &copy; Django Blogs</p>
+    </footer>
+</body>
+
+</html>
